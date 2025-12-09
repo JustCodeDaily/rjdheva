@@ -41,47 +41,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-          Features
-        </h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Fast & Responsive",
-              description: "Lightning-quick performance optimized for all devices",
-              icon: "⚡"
-            },
-            {
-              title: "Modern Design",
-              description: "Beautiful gradient backgrounds and smooth animations",
-              icon: "🎨"
-            },
-            {
-              title: "Easy to Customize",
-              description: "Tailwind CSS classes make customization simple",
-              icon: "🛠️"
-            }
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="p-6 rounded-lg bg-slate-800/50 border border-purple-500/20 hover:border-purple-500/50 transition"
-            >
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h4 className="text-xl font-bold mb-3">{feature.title}</h4>
-              <p className="text-slate-300">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-purple-500/20 mt-20 py-10 bg-slate-900/50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-400">
-          <p>&copy; 2025 rjdheva. Built with React &amp; Tailwind CSS.</p>
-        </div>
-      </footer>
     </div>
   );
 }
