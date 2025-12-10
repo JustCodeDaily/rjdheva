@@ -67,6 +67,23 @@ export default function LandingPage() {
           </div>
         </div>
       </main>
+
+            {/* Footer with Attribution */}
+      <footer className="bg-gray-50 border-t border-gray-200 py-6 mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm text-gray-600">
+            <a 
+              href="https://www.flaticon.com/free-icons/sunflower" 
+              title="sunflower icons"
+              className="hover:text-gray-900 transition underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sunflower icons created by Victoruler - Flaticon
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
