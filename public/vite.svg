@@ -1,33 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <!-- Sunflower petals -->
-  <g fill="#FFD700">
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(0 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(30 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(60 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(90 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(120 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(150 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(180 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(210 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(240 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(270 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(300 50 50)"/>
-    <ellipse cx="50" cy="15" rx="8" ry="15" transform="rotate(330 50 50)"/>
+  <g id="petals">
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(0 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(30 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(60 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(90 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(120 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(150 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(180 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(210 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(240 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(270 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(300 100 100)"/>
+    <ellipse cx="100" cy="30" rx="20" ry="35" fill="#FFD700" transform="rotate(330 100 100)"/>
   </g>
   
   <!-- Sunflower center -->
-  <circle cx="50" cy="50" r="18" fill="#8B4513"/>
+  <circle cx="100" cy="100" r="40" fill="#8B4513"/>
   
   <!-- Seeds pattern in center -->
-  <g fill="#654321" opacity="0.6">
-    <circle cx="45" cy="45" r="2"/>
-    <circle cx="55" cy="45" r="2"/>
-    <circle cx="45" cy="55" r="2"/>
-    <circle cx="55" cy="55" r="2"/>
-    <circle cx="50" cy="50" r="2"/>
-    <circle cx="42" cy="50" r="1.5"/>
-    <circle cx="58" cy="50" r="1.5"/>
-    <circle cx="50" cy="42" r="1.5"/>
-    <circle cx="50" cy="58" r="1.5"/>
+  <g id="seeds" fill="#654321" opacity="0.6">
+    <circle cx="90" cy="90" r="3"/>
+    <circle cx="100" cy="88" r="3"/>
+    <circle cx="110" cy="90" r="3"/>
+    <circle cx="88" cy="100" r="3"/>
+    <circle cx="98" cy="98" r="3"/>
+    <circle cx="108" cy="100" r="3"/>
+    <circle cx="90" cy="110" r="3"/>
+    <circle cx="100" cy="112" r="3"/>
+    <circle cx="110" cy="110" r="3"/>
+    <circle cx="95" cy="105" r="3"/>
+    <circle cx="105" cy="95" r="3"/>
   </g>
 </svg>
