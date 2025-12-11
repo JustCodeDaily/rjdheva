@@ -16,33 +16,51 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section id="home" className="relative h-[800px] mt-[100px] pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
+        {/* Background Text - First Name */}
+        <div className="absolute top-0 leading-none font-montserrat text-[200px] font-black text-white opacity-[0.04] max-[991px]:text-[130px] max-[991px]:top-[30px] max-[575px]:text-[100px] max-[460px]:text-[70px]">
+          Jenny
+        </div>
+        {/* Background Text - Last Name */}
+        <div className="absolute bottom-0 right-0 font-montserrat text-[200px] font-black text-white opacity-[0.04] max-[991px]:bottom-[250px] max-[991px]:text-[130px] max-[575px]:text-[100px] max-[460px]:text-[70px]">
+          Brown
+        </div>
+        
+        <div className="flex h-full flex-wrap justify-between relative items-center mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap w-full">
             {/* Hero Image */}
-            <div className="order-2 lg:order-1 flex justify-center">
-              <div className="relative w-full max-w-md">
-                <img 
-                  src="https://via.placeholder.com/400x500/8B5CF6/FFFFFF?text=Hero+Image" 
-                  alt="Portfolio Hero" 
-                  className="w-full rounded-3xl shadow-2xl"
-                />
+            <div className="md:w-1/2 w-full px-3">
+              <div className="relative">
+                <div className="relative">
+                  <img 
+                    src="https://via.placeholder.com/400x500/8B5CF6/FFFFFF?text=Hero+Image" 
+                    alt="Portfolio Hero" 
+                    className="w-[calc(100%-300px)] mt-auto mx-auto mb-[50px] block max-[1399px]:w-[calc(100%-260px)] max-[1199px]:w-[calc(100%-215px)] max-[991px]:w-[calc(100%-400px)] max-[767px]:w-[calc(100%-250px)] max-[575px]:w-[210px]"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Hero Content */}
-            <div className="order-1 lg:order-2">
-              <h4 className="text-pink-500 text-xl mb-4 font-semibold">Hi, I am</h4>
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">Jenny Brown</h1>
-              <p className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-8">
-                I am a <span className="text-pink-500">App Developer</span>
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded-2xl font-semibold hover:bg-pink-500 hover:border-pink-500 hover:text-white transition">Download CV
-                </button>
-                <button className="px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded-2xl font-semibold hover:bg-pink-500 hover:border-pink-500 hover:text-white transition">
-                  Hire Me →
-                </button>
+            <div className="md:w-1/2 w-full px-3">
+              <div className="h-full flex flex-col justify-center relative max-[991px]:mt-[15px] max-[991px]:pb-[30px] max-[991px]:items-center max-[575px]:text-center">
+                <h4 className="mb-2 font-montserrat tracking-[0.03rem] leading-tight text-[35px] font-bold text-pink-500 max-[1399px]:text-[32px] max-[1199px]:text-[28px] max-[767px]:text-[24px]">
+                  Hi, I am
+                </h4>
+                <h1 className="mb-4 text-[78px] text-gray-900 font-bold relative tracking-[0.03rem] leading-tight max-[1399px]:text-[70px] max-[1199px]:text-[52px] max-[767px]:text-[38px]">
+                  Jenny Brown
+                </h1>
+                <p className="font-montserrat text-[27px] font-semibold text-gray-900 leading-[26px] tracking-[0.03rem] max-[1399px]:text-[24px] max-[1199px]:text-[20px] max-[767px]:text-[18px]">
+                  I am a <span className="mx-1 text-pink-500">App Developer</span>
+                </p>
+                <div className="flex flex-wrap gap-4 pt-[50px] relative max-[991px]:pt-[20px] max-[575px]:justify-center">
+                  <button type="button" className="px-4 py-3 font-montserrat text-sm font-semibold leading-tight capitalize bg-white text-gray-900 border border-gray-900 rounded-2xl hover:bg-pink-500 hover:border-pink-500 hover:text-white transition">
+                    Download CV
+                  </button>
+                  <button type="button" className="px-4 py-3 font-montserrat text-sm font-semibold leading-tight capitalize bg-white text-gray-900 border border-gray-900 rounded-2xl hover:bg-pink-500 hover:border-pink-500 hover:text-white transition">
+                    Hire Me →
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -58,7 +76,6 @@ export default function LandingPage() {
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto"></div>
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Quote */}
             <div>
@@ -73,7 +90,6 @@ export default function LandingPage() {
                 <p className="text-gray-700">Jenny B. Brown</p>
               </div>
             </div>
-
             {/* Profile Image */}
             <div className="flex justify-center">
               <div className="relative">
@@ -87,10 +103,8 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-
             {/* Skills */}
             <div className="space-y-6">
-              {/* Frontend */}
               <div className="bg-yellow-50 p-6 rounded-3xl border-2 border-yellow-200">
                 <div className="flex items-start gap-4">
                   <div className="text-2xl font-bold">90%</div>
@@ -100,8 +114,6 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Backend */}
               <div className="bg-pink-50 p-6 rounded-3xl border-2 border-pink-200">
                 <div className="flex items-start gap-4">
                   <div className="text-2xl font-bold">80%</div>
@@ -111,8 +123,6 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Graphics */}
               <div className="bg-blue-50 p-6 rounded-3xl border-2 border-blue-200">
                 <div className="flex items-start gap-4">
                   <div className="text-2xl font-bold">85%</div>
@@ -136,9 +146,7 @@ export default function LandingPage() {
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto"></div>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Graphics Design */}
             <div className="bg-yellow-100 rounded-3xl p-6 text-center hover:shadow-xl transition">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center border-2 border-gray-900">
                 <span className="text-2xl">🎨</span>
@@ -146,8 +154,6 @@ export default function LandingPage() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">Graphics Design</h3>
               <p className="text-sm text-gray-700">Develop the Visual Identity of Your Business.</p>
             </div>
-
-            {/* Web Design */}
             <div className="bg-pink-100 rounded-3xl p-6 text-center hover:shadow-xl transition">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center border-2 border-gray-900">
                 <span className="text-2xl">💻</span>
@@ -155,8 +161,6 @@ export default function LandingPage() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">Web Design</h3>
               <p className="text-sm text-gray-700">Connect With Your Users, Not Just Your Business.</p>
             </div>
-
-            {/* App Development */}
             <div className="bg-blue-100 rounded-3xl p-6 text-center hover:shadow-xl transition">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center border-2 border-gray-900">
                 <span className="text-2xl">📱</span>
@@ -164,8 +168,6 @@ export default function LandingPage() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">App Development</h3>
               <p className="text-sm text-gray-700">We Develop the Visual Identity of Your Business.</p>
             </div>
-
-            {/* SEO Marketing */}
             <div className="bg-green-100 rounded-3xl p-6 text-center hover:shadow-xl transition">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full flex items-center justify-center border-2 border-gray-900">
                 <span className="text-2xl">🚀</span>
@@ -186,9 +188,7 @@ export default function LandingPage() {
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto"></div>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
             <div className="bg-white rounded-3xl overflow-hidden border-2 border-gray-900 hover:shadow-2xl transition">
               <img 
                 src="https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=Project+1" 
@@ -201,8 +201,6 @@ export default function LandingPage() {
                 <p className="text-sm text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
             </div>
-
-            {/* Project 2 */}
             <div className="bg-white rounded-3xl overflow-hidden border-2 border-gray-900 hover:shadow-2xl transition">
               <img 
                 src="https://via.placeholder.com/600x400/EC4899/FFFFFF?text=Project+2" 
@@ -215,8 +213,6 @@ export default function LandingPage() {
                 <p className="text-sm text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
             </div>
-
-            {/* Project 3 */}
             <div className="bg-white rounded-3xl overflow-hidden border-2 border-gray-900 hover:shadow-2xl transition">
               <img 
                 src="https://via.placeholder.com/600x400/10B981/FFFFFF?text=Project+3" 
