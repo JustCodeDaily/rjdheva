@@ -25,7 +25,7 @@ const Hero = () => {
                 RJ Dheva 
               </h1>
               <p className="font-montserrat text-[27px] font-semibold text-[#111a24]">
-                I am a<span className="mx-[5px] text-[#f41a4a]">App Developer</span>
+                I am a<span className="mx-[5px] text-[#f41a4a]">Performance Artist</span>
               </p>
               <div className="m-[-10px] pt-[50px] flex flex-wrap">
                 <button className="m-[10px] py-[10px] px-[15px] font-montserrat text-[14px] font-semibold bg-[#fff] text-[#111a24] border-[1px] border-[#111a24] rounded-[15px] hover:bg-[#f41a4a]">
